@@ -7,13 +7,13 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SwaggerConfig {
-    
+
     @Bean
-    public OpenAPI customOpenAPI(){
+    public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                .title("Chess Game API")
-                .version("1.0")
-                .description(API for playing a chess game));
+                        .title("Game of Chess API")
+                        .version("1.0")
+                        .description("API for a Chess Game Application"));
     }
 }
